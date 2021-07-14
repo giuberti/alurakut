@@ -2,14 +2,13 @@ import React from 'react';
 import styled from 'styled-components'
 import MainGrid from '../src/components/MainGrid'
 import Box from '../src/components/Box'
-import { AlurakutMenu, AlurakutProfileSidebarMenuDefault } from '../src/lib/aluraukutCommons';
-import { OrkutNostalgicIconSet } from '../src/lib/aluraukutCommons';
+import { AlurakutMenu, AlurakutProfileSidebarMenuDefault, OrkutNostalgicIconSet } from '../src/lib/aluraukutCommons';
 import { ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations';
 
 function ProfileSideBar(props) {
   console.log(props);
   return (
-    <Box>
+    <Box as="aside">
       <img src={`https://github.com/${props.gitHubUser}.png`} />
       <hr />
       <a className="boxLink" href={`https://github.com/${props.gitHubUser}`}>
@@ -30,10 +29,8 @@ export default function Home() {
     title: 'Odeio acordar cedo',
     image: 'http://placehold.it/300x300',
   }
-  //comunidadeD
   
   const [comunidades, setComunidades] = React.useState([novaComunidade]);
-  //const comunidades = ['Alurakut', 'odeioAcordarCedo', 'imitoSivioSantos'];
 
   return (
     <>
