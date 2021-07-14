@@ -57,7 +57,7 @@ export default function Home() {
   const [amigos, setAmigos] = React.useState([]);
 
   React.useEffect(() => {
-    fetch('http://api.github.com/users/juunegreiros/followers?per_page=6')
+    fetch('https://api.github.com/users/juunegreiros/followers?per_page=6')
       .then((resp) => {
         if (resp.ok)
           return (resp.json());
