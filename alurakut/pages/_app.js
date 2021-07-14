@@ -23,15 +23,8 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     height: auto;
     display: block;
+    border-radius: 8px;
   }
-
-  img.profilePic  {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: '8px';
-  }
-
 
   ${AlurakutStyles}
 `
@@ -39,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
 const theme = {
   colors: {
     primary: '#0070f3',
+    primary: 'red',
   },
 }
 

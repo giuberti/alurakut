@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Box = styled.div`
   background: #FFFFFF;
@@ -56,4 +56,5 @@ const Box = styled.div`
     background-color: #6F92BB;
   }
 `;
-export default Box;
+
+export default Box
