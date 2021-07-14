@@ -26,6 +26,10 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 8px;
   }
 
+  img.lgpd {
+    filter: blur(5px);
+  }
+
   ${AlurakutStyles}
 `
 

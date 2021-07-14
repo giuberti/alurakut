@@ -31,7 +31,7 @@ function ProfileRelationsBox(props) {
         return (
           <li key={item.id}>
             <a href={`/users/${item.title}`}>
-              <img src={item.avatar_url}></img>
+              <img className="lgpd" src={item.avatar_url}></img>
               <span>{item.login}</span>
             </a>
           </li>
@@ -159,7 +159,7 @@ export default function Home() {
                 return (
                   <li key={pessoa}>
                     <a href={`/users/${pessoa}`}>
-                      <img src={`https://github.com/${pessoa}.png`}></img>
+                      <img className="lgpd" src={`https://github.com/${pessoa}.png`}></img>
                       <span>{pessoa}</span>
                     </a>
                   </li>
