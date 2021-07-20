@@ -8,7 +8,7 @@ import { AlurakutMenu, AlurakutProfileSidebarMenuDefault, OrkutNostalgicIconSet 
 import { ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations';
 
 function ProfileSideBar(props) {
-  console.log(props);
+  console.log('ProfileSideBar', props);
   return (
     <Box as="aside">
       <img src={`https://github.com/${props.githubUser}.png`} />
@@ -23,6 +23,7 @@ function ProfileSideBar(props) {
 };
 
 function ProfileRelationsBox(props) {
+  console.log('ProfileRelationsBox', props);
   return (
     <ProfileRelationsBoxWrapper>
       <h2 className="smallTitle">
@@ -51,14 +52,8 @@ export default function Home(props) {
   console.log('currentUser', currentUser);
 
   const pessoasFavs = ['juunegreiros', 'omariosouto', 'peas', 'marcobrunodev', 'felipefialho'];
-  const novaComunidade = {
-    id: -1,
-    title: 'Odeio acordar cedo',
-    image: 'http://placehold.it/300x300',
-  }
 
   const [comunidades, setComunidades] = React.useState([]);
-
   const [amigos, setAmigos] = React.useState([]);
 
   React.useEffect(() => {
@@ -98,7 +93,7 @@ export default function Home(props) {
 
   return (
     <>
-      <AlurakutMenu />
+      <AlurakutMenu githubUser={currentUser} />
       <MainGrid>
         <div className="profileArea" style={{ gridArea: "profileArea" }}>
           <ProfileSideBar githubUser={currentUser} />

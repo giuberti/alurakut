@@ -9,7 +9,8 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    background-color: #d9e6f6;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: sans-serif;
   }
 
